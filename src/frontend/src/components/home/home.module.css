@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+.home {
+    height: calc(100vh - 64px);
+    display: flex;
+    align-items: center;
+}
+
+.home>div {
+    width: 70%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-div {
+    width: calc(100% - 150px);
+    position: relative;
+    height: 39px;
+}
+
+.input-div>input {
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #878787;
+    width: 100%;
+    height: inherit;
+    padding-left: 10px;
+}
+
+.search-icon {
+    position: absolute;
+    width: 16px;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.input-div>span {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #878787;
+    font-family: Inter;
+    font-size: 14px;
+}
+
+.table {
+    display: flex;
+    overflow: auto;
+    width: calc(100% - 150px);
+    padding-top: 10px;
+    padding-left: 21px;
+}
+
+.id-column {
+    width: calc(100% - 65px);
+    overflow: hidden;
+}
+
+.churn-column {
+    width: 76px;
+}
+
+.id-column>h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.churn-column>h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.details-head {
+    width: 100%;
+    background-color: #368AEC;
+    height: 39px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: white;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-div {
+    max-height: 395px;
+    padding-top: 10px;
+    padding-left: 21px;
+    overflow: auto;
+}
+
+.details-div p {
+    font-weight: normal;
+    position: relative;
+}
+
+.details-div span {
+    font-weight: 500;
+    margin-right: 8px;
+}
+
+.lines {
+    width: calc(100% - 150px);
+    padding-left: 21px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    max-height: 350px;
+    overflow: auto;
+}
+
+.lines>div>span {
+    width: 65px;
+    margin-left: auto;
+}
+
+.lines>div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.lines>div:last-child {
+    margin-bottom: 2px;
+}
+
+.lines>div::after {
+    opacity: 0;
+    content: '';
+    position: absolute;
+    left: -21px;
+    border-radius: 10px;
+    background-color: #368AEC;
+    width: 100%;
+    height: 28px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    opacity: 0;
+}
+
+.lines>div:hover::after {
+    opacity: 1;
+}
+
+.lines>div:hover {
+    color: white;
+}
+
+.lines::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Selects the scrollbar thumb of #scroll in WebKit browsers */
+.lines::-webkit-scrollbar-thumb {
+    background-color: #368AEC;
+    border-radius: 6px;
+}
+
+/* Selects the end part of the scrollbar track of #scroll in WebKit browsers */
+.lines::-webkit-scrollbar-track-piece:end {
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Selects the start part of the scrollbar track of #scroll in WebKit browsers */
+.lines::-webkit-scrollbar-track-piece:start {
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.details-div::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Selects the scrollbar thumb of #scroll in WebKit browsers */
+.details-div::-webkit-scrollbar-thumb {
+    background-color: #368AEC;
+    border-radius: 6px;
+}
+
+/* Selects the end part of the scrollbar track of #scroll in WebKit browsers */
+.details-div::-webkit-scrollbar-track-piece:end {
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Selects the start part of the scrollbar track of #scroll in WebKit browsers */
+.details-div::-webkit-scrollbar-track-piece:start {
+    background-color: #e7e7e7;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.details {
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.25);
+    width: calc(100% - 150px);
+    border-radius: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.details p {
+    display: flex;
+    align-items: center;
+}
+
+.details input {
+    outline: none;
+    border: 1px #D9D9D9 solid;
+    padding-left: 3px;
+    padding-right: 3px;
+    width: 100px;
+    font-size: 13px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.edit-icon{
+    position: absolute;
+    width: 20px;
+    z-index: 10;
+    height: 20px;
+    top: 46px;
+    right: 10px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.churn-icon {
+    position: absolute;
+    width: 20px;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.confirm-icon{
+    position: absolute;
+    width: 17.5px;
+    z-index: 9;
+    height: 17.5px;
+    top: 46px;
+    right: 12.5px;
+    cursor: pointer;
+    transition: top ease 0.9s;
+}
